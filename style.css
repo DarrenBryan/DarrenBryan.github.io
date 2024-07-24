@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    transition: all 0.4s;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+@font-face {
+  font-family: Display;
+  src: url(./assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+@media only screen and (max-width: 900px) {
+    h1 {
+        font-size: 2.5em !important;
+    }
+
+    p {
+        font-size: 0.8em !important;
+    }
+
+    li {
+        font-size: 0.7em !important;
+    }
+
+    .title {
+        padding: 10px;
+    }
+
+    .moto {
+        padding: 10px;
+        font-size: 2.3em !important;
+    }
+
+    .service-section {
+        display: flex !important;
+        flex-direction: column;
+        overflow-x: hidden;
+    }
+
+    .service {
+        width: 80vw !important;
+        height: 70vh !important;
+        margin: 20px !important;
+    }
+
+    .scroll-container {
+        scroll-snap-type: none !important;
+    }
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+}
+
+ul > li {
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+ul {
+    list-style-type: square;
+}
+
+.title {
+    font-size: 6em;
+    color: white;
+    font-family: Display;
+    text-align: center;
+}
+
+.moto {
+    font-size: 3em;
+    color: white;
+    font-family: Display;
+    text-align: center;
+}
+
+.heading {
+    font-size: 6em;
+    text-decoration: underline;
+    color: black;
+    font-family: Display;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.content > p {
+    font-size: 1.5em;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.form-input input, .form-input textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+.service {
+    padding: 20px;
+    margin: 40px;
+    width: 40vw;
+    height: 40vh;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-section {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    scroll-snap-align: start;
+}
+
+
+.submit {
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: none;
+}
+
+.submit:hover {
+    cursor: pointer;
+}
+
+.frosted {
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    margin: 0px;
+}
+
+footer {
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    margin: 20px;
+    scroll-snap-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
