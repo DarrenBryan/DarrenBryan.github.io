@@ -1,93 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title></title>
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="container">
-            <div class="section" style="background: url(./assets/images/security.jpg); background-size: 100% 100%;">
-                <div class="frosted" style="border-radius: 10px;">
-                    <h1 class="title">Darren Bryan Security Services LTD</h1>
-                    <h2 class="moto">Small enough to care, Large enough to cope</h2>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Darren Bryan Security Services | Professional Security Solutions</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="assets/images/Logo.jpg" alt="Darren Bryan Security Services" class="nav-logo">
             </div>
-            <div class="service-section" id="services">
-                <div class="service frosted">
-                    <h1 style="font-size: 1.5em; width: 100%;">Security for your Business</h1>
-                    <p>Protecting your home or business is a basic human instinct -
-                    you've worked hard for what you have. Why would you jeopardize
-                    that? At Darren Bryan Security Services we're dedicated to
-                    providing you true security and peace of mind. When you know
-                    you're safe and secure, you can rest easily.
-                    With other 25 years in the security business, you can trust
-                    us to protect your home, family, and business. We set ourselves
-                    apart with unwavering integrity and a strict code of ethics.
-                    We've been where you are. We know you need a security
-                    contractor who you can trust.</p>
-                </div>
-                <div class="service frosted">
-                    <h1 style="font-size: 1.5em; width: 100%;">Experts in the Field</h1>
-                        <p>Being a Salto inspired partner we can supply install and maintain
-                        existing installations in an around the Oxford Area with many
-                        local accounts including 13 Oxford colleges,Schools and
-                        Oxfordshire county council sites we are your local company to trust</p>
-                </div>
-                <div class="service frosted">
-                    <h1 style="font-size: 1.5em; width: 100%;">Variety of Services</h1>
-                        <p>At Darren Bryan Security Services Ltd, we do everything
-                        needed to ensure the quality of protection you and your
-                        family receive is of the highest caliber. And, because we
-                        integrate all of our services, we're able to deduce the most
-                        accurate picture of what's happening during a time of high
-                        urgency. While we hope you and your family never need to use
-                        any of our emergency services, if you do, we assure you that
-                        you'll have peace of mind you made the right choice. With more
-                        than 25 years in the security business, we know what it takes
-                        to protect you and yours.</p>
-                        <ul>
-                            <li><a href="https://saltosystems.com/en-gb/">Salto</a></li>
-                            <li><a href="https://www.paxton-access.com/">Paxton</a></li>
-                            <li><a href="https://www.deasystem.com/en/">Dea</a></li>
-                            <li><a href="https://www.came.com/uk/installers">Came</a></li>
-                            <li><a href="https://www.bftautomationuk.com/">BFT</a></li>
-                        </ul>
-                </div>
-                <div class="service" style="border: none;">
-                    <img src="assets/images/Logo.jpg" />
-                </div>
-            </div>
-            <div class="section">
-            <h1 class="heading">Contact Us</h1>
-            <form action="https://formsubmit.co/5165c50166e56cc08f3dd15288a1d60" method="post">
-                <div class="form-input">
-                    <label for="firstname">First Name:</label>
-                    <input type="text" id="firstname" name="firstname" required>
-                </div>
-                <div class="form-input">
-                    <label for="lastname">Last Name:</label>
-                    <input type="text" id="lastname" name="lastname" required>
-                </div>
-                <div class="form-input">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-input">
-                    <label for="subject">Subject:</label>
-                    <input type="text" id="subject" name="subject" required>
-                </div>
-                <div class="form-input">
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="4" cols="50" required style="height: 222px;"></textarea><br><br>
-                </div>
-                <input class="submit" type="submit" value="Submit">
-            </form>
-            </div>
-            <footer>
-                <p>Darren Bryan Security Services LTD ©2013</p> 
-            </footer>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#partners">Partners</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-    </body>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Est. 2013 • 10+ Years of Excellence</div>
+            <h1 class="hero-title">Darren Bryan Security Services</h1>
+            <p class="hero-subtitle">Small enough to care, large enough to cope</p>
+            <p class="hero-description">Protecting Oxford's most trusted institutions with unwavering integrity and a strict code of ethics</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="scroll-arrow">↓</div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stat-item">
+                <div class="stat-number">10+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">13</div>
+                <div class="stat-label">Oxford Colleges</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Trusted Partner</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What We Offer</span>
+                <h2 class="section-title">Comprehensive Security Solutions</h2>
+                <p class="section-description">Protecting your home, family, and business with integrated security services of the highest caliber</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Business Security</h3>
+                    <p>Protecting your home or business is a basic human instinct—you've worked hard for what you have. At Darren Bryan Security Services, we're dedicated to providing true security and peace of mind. When you know you're safe and secure, you can rest easily.</p>
+                    <p>With over 10 years in the security business, you can trust us to protect your home, family, and business. We set ourselves apart with unwavering integrity and a strict code of ethics.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Experts in the Field</h3>
+                    <p>As a Salto Inspired Partner, we supply, install, and maintain existing installations in and around the Oxford area. With many local accounts including 13 Oxford colleges, schools, and Oxfordshire County Council sites, we are your local company to trust.</p>
+                    <div class="expertise-badges">
+                        <span class="badge">Oxford Colleges</span>
+                        <span class="badge">Schools</span>
+                        <span class="badge">Council Sites</span>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <h3>Integrated Services</h3>
+                    <p>At Darren Bryan Security Services Ltd, we do everything needed to ensure the quality of protection you and your family receive is of the highest caliber. Because we integrate all of our services, we're able to deduce the most accurate picture of what's happening during a time of high urgency.</p>
+                    <p>While we hope you never need to use any of our emergency services, if you do, we assure you that you'll have peace of mind you made the right choice. With more than 10 years in the security business, we know what it takes to protect you and yours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="partners">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Trusted Brands</span>
+                <h2 class="section-title">Our Technology Partners</h2>
+                <p class="section-description">We work with industry-leading brands to deliver the best security solutions</p>
+            </div>
+
+            <div class="partners-grid">
+                <a href="https://saltosystems.com/en-gb/" class="partner-card" target="_blank" rel="noopener">
+                    <div class="partner-name">Salto</div>
+                    <p>Access Control Systems</p>
+                </a>
+                <a href="https://www.paxton-access.com/" class="partner-card" target="_blank" rel="noopener">
+                    <div class="partner-name">Paxton</div>
+                    <p>Security Solutions</p>
+                </a>
+                <a href="https://www.deasystem.com/en/" class="partner-card" target="_blank" rel="noopener">
+                    <div class="partner-name">DEA</div>
+                    <p>Automation Systems</p>
+                </a>
+                <a href="https://www.came.com/uk/installers" class="partner-card" target="_blank" rel="noopener">
+                    <div class="partner-name">CAME</div>
+                    <p>Gate Automation</p>
+                </a>
+                <a href="https://www.bftautomationuk.com/" class="partner-card" target="_blank" rel="noopener">
+                    <div class="partner-name">BFT</div>
+                    <p>Barrier Systems</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <span class="section-badge">Get in Touch</span>
+                        <h2 class="section-title">Contact Us</h2>
+                        <p class="section-description">Ready to secure your property? Get in touch with our team today for a consultation.</p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div>
+                                <h4>Location</h4>
+                                <p>Oxford Area, UK</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div>
+                                <h4>Business Hours</h4>
+                                <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div>
+                                <h4>Emergency Service</h4>
+                                <p>24/7 Support Available</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form action="https://formsubmit.co/5165c50166e56cc08f3dd15288a1d60" method="post" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstname">First Name</label>
+                                <input type="text" id="firstname" name="firstname" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" id="lastname" name="lastname" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Darren Bryan Security Services LTD</h3>
+                    <p>Your trusted security partner since 2013</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#partners">Partners</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2013-2025 Darren Bryan Security Services LTD. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
 </html>
